@@ -1,0 +1,663 @@
+[
+    {
+        "studentName": "John Doe",
+        "studentID": "220101001",
+        "department": "CSE",
+        "batch": 14,
+        "email": "john.doe@example.com",
+        "results": [
+            {
+                "subjectName": "Computer Architecture",
+                "courseCode": "CSE2101",
+                "credit": 3,
+                "status": "current",
+                "detailsMark": [
+                    {
+                        "ct1": 15,
+                        "ct2": 16,
+                        "ct3": 12,
+                        "ct4": 18,
+                        "assignment1": 14,
+                        "assignment2": 12,
+                        "attendanceMark": 11,
+                        "partA": 75,
+                        "partB": 80
+                    }
+                ],
+                "totalMark": 85,
+                "level": 2,
+                "Term": 1
+            },
+            {
+                "subjectName": "Data Structures and Algorithms",
+                "courseCode": "CSE2102",
+                "detailsMark": [
+                    {
+                        "ct1": 15,
+                        "ct2": 16,
+                        "ct3": 12,
+                        "ct4": 18,
+                        "assignment1": 14,
+                        "assignment2": 12,
+                        "attendanceMark": 11,
+                        "partA": 75,
+                        "partB": 80
+                    }
+                ],
+                "totalMark": 78,
+                "level": 2,
+                "Term": 1
+            },
+            {
+                "subjectName": "Database Management Systems",
+                "courseCode": "CSE2103",
+                "detailsMark": [
+                    {
+                        "ct1": 15,
+                        "ct2": 16,
+                        "ct3": 12,
+                        "ct4": 18,
+                        "assignment1": 14,
+                        "assignment2": 12,
+                        "attendanceMark": 11,
+                        "partA": 75,
+                        "partB": 80
+                    }
+                ],
+                "totalMark": 90,
+                "level": 2,
+                "Term": 1
+            },
+            {
+                "subjectName": "Operating Systems",
+                "courseCode": "CSE3104",
+                "detailsMark": [
+                    {
+                        "ct1": 15,
+                        "ct2": 16,
+                        "ct3": 12,
+                        "ct4": 18,
+                        "assignment1": 14,
+                        "assignment2": 12,
+                        "attendanceMark": 11,
+                        "partA": 75,
+                        "partB": 80
+                    }
+                ],
+                "totalMark": 92,
+                "level": 2,
+                "Term": 1
+            },
+            {
+                "subjectName": "Software Engineering",
+                "courseCode": "CSE2105",
+                "detailsMark": [
+                    {
+                        "ct1": 15,
+                        "ct2": 16,
+                        "ct3": 12,
+                        "ct4": 18,
+                        "assignment1": 14,
+                        "assignment2": 12,
+                        "attendanceMark": 11,
+                        "partA": 75,
+                        "partB": 80
+                    }
+                ],
+                "totalMark": 88,
+                "level": 2,
+                "Term": 1
+            }
+        ]
+    },
+    {
+        "studentName": "Jane Smith",
+        "studentID": "220101002",
+        "department": "CSE",
+        "batch": 14,
+        "email": "jane.smith@example.com",
+        "results": [
+            {
+                "subjectName": "Computer Architecture",
+                "courseCode": "CSE2101",
+                "credit": 3,
+                "detailsMark": [
+                    {
+                        "ct1": 16,
+                        "ct2": 18,
+                        "ct3": 14,
+                        "ct4": 17,
+                        "assignment1": 15,
+                        "assignment2": 13,
+                        "attendanceMark": 10,
+                        "partA": 80,
+                        "partB": 85
+                    }
+                ],
+                "totalMark": 88,
+                "level": 2,
+                "Term": 1
+            },
+            {
+                "subjectName": "Data Structures and Algorithms",
+                "courseCode": "CSE2102",
+                "detailsMark": [
+                    {
+                        "ct1": 17,
+                        "ct2": 18,
+                        "ct3": 13,
+                        "ct4": 17,
+                        "assignment1": 15,
+                        "assignment2": 13,
+                        "attendanceMark": 10,
+                        "partA": 80,
+                        "partB": 85
+                    }
+                ],
+                "totalMark": 90,
+                "level": 2,
+                "Term": 1
+            },
+            {
+                "subjectName": "Database Management Systems",
+                "courseCode": "CSE2103",
+                "detailsMark": [
+                    {
+                        "ct1": 16,
+                        "ct2": 18,
+                        "ct3": 14,
+                        "ct4": 17,
+                        "assignment1": 15,
+                        "assignment2": 13,
+                        "attendanceMark": 10,
+                        "partA": 80,
+                        "partB": 85
+                    }
+                ],
+                "totalMark": 85,
+                "level": 2,
+                "Term": 1
+            },
+            {
+                "subjectName": "Operating Systems",
+                "courseCode": "CSE3104",
+                "detailsMark": [
+                    {
+                        "ct1": 17,
+                        "ct2": 18,
+                        "ct3": 14,
+                        "ct4": 17,
+                        "assignment1": 15,
+                        "assignment2": 13,
+                        "attendanceMark": 10,
+                        "partA": 80,
+                        "partB": 85
+                    }
+                ],
+                "totalMark": 92,
+                "level": 2,
+                "Term": 1
+            },
+            {
+                "subjectName": "Software Engineering",
+                "courseCode": "CSE2105",
+                "detailsMark": [
+                    {
+                        "ct1": 17,
+                        "ct2": 18,
+                        "ct3": 14,
+                        "ct4": 17,
+                        "assignment1": 15,
+                        "assignment2": 13,
+                        "attendanceMark": 10,
+                        "partA": 80,
+                        "partB": 85
+                    }
+                ],
+                "totalMark": 91,
+                "level": 2,
+                "Term": 1
+            }
+        ]
+    },
+    {
+        "studentName": "Jon",
+        "studentID": "220101021",
+        "department": "CSE",
+        "batch": 14,
+        "email": "jon@example.com",
+        "results": [
+            {
+                "subjectName": "Computer Networks",
+                "courseCode": "CSE3101",
+                "credit": 3,
+                "detailsMark": [
+                    {
+                        "ct1": 15,
+                        "ct2": 16,
+                        "ct3": 12,
+                        "ct4": 18,
+                        "assignment1": 14,
+                        "assignment2": 12,
+                        "attendanceMark": 11,
+                        "partA": 75,
+                        "partB": 80
+                    }
+                ],
+                "totalMark": 85,
+                "level": 3,
+                "Term": 1
+            },
+            {
+                "subjectName": "Algorithm Design",
+                "courseCode": "CSE3102",
+                "detailsMark": [
+                    {
+                        "ct1": 15,
+                        "ct2": 16,
+                        "ct3": 12,
+                        "ct4": 18,
+                        "assignment1": 14,
+                        "assignment2": 12,
+                        "attendanceMark": 11,
+                        "partA": 75,
+                        "partB": 80
+                    }
+                ],
+                "totalMark": 78,
+                "level": 3,
+                "Term": 1
+            },
+            {
+                "subjectName": "Database Systems",
+                "courseCode": "CSE3103",
+                "detailsMark": [
+                    {
+                        "ct1": 15,
+                        "ct2": 16,
+                        "ct3": 12,
+                        "ct4": 18,
+                        "assignment1": 14,
+                        "assignment2": 12,
+                        "attendanceMark": 11,
+                        "partA": 75,
+                        "partB": 80
+                    }
+                ],
+                "totalMark": 90,
+                "level": 3,
+                "Term": 1
+            },
+            {
+                "subjectName": "Operating Systems",
+                "courseCode": "CSE3104",
+                "detailsMark": [
+                    {
+                        "ct1": 15,
+                        "ct2": 16,
+                        "ct3": 12,
+                        "ct4": 18,
+                        "assignment1": 14,
+                        "assignment2": 12,
+                        "attendanceMark": 11,
+                        "partA": 75,
+                        "partB": 80
+                    }
+                ],
+                "totalMark": 92,
+                "level": 3,
+                "Term": 1
+            },
+            {
+                "subjectName": "Software Development",
+                "courseCode": "CSE3105",
+                "detailsMark": [
+                    {
+                        "ct1": 15,
+                        "ct2": 16,
+                        "ct3": 12,
+                        "ct4": 18,
+                        "assignment1": 14,
+                        "assignment2": 12,
+                        "attendanceMark": 11,
+                        "partA": 75,
+                        "partB": 80
+                    }
+                ],
+                "totalMark": 88,
+                "level": 3,
+                "Term": 1
+            }
+        ]
+    },
+    {
+        "studentName": "Smith",
+        "studentID": "220101022",
+        "department": "CSE",
+        "batch": 14,
+        "email": "smith@example.com",
+        "results": [
+            {
+                "subjectName": "Computer Networks",
+                "courseCode": "CSE3101",
+                "credit": 3,
+                "detailsMark": [
+                    {
+                        "ct1": 16,
+                        "ct2": 18,
+                        "ct3": 14,
+                        "ct4": 17,
+                        "assignment1": 15,
+                        "assignment2": 13,
+                        "attendanceMark": 10,
+                        "partA": 80,
+                        "partB": 85
+                    }
+                ],
+                "totalMark": 88,
+                "level": 3,
+                "Term": 1
+            },
+            {
+                "subjectName": "Algorithm Design",
+                "courseCode": "CSE3102",
+                "detailsMark": [
+                    {
+                        "ct1": 17,
+                        "ct2": 18,
+                        "ct3": 13,
+                        "ct4": 17,
+                        "assignment1": 15,
+                        "assignment2": 13,
+                        "attendanceMark": 10,
+                        "partA": 80,
+                        "partB": 85
+                    }
+                ],
+                "totalMark": 90,
+                "level": 3,
+                "Term": 1
+            },
+            {
+                "subjectName": "Database Systems",
+                "courseCode": "CSE3103",
+                "detailsMark": [
+                    {
+                        "ct1": 16,
+                        "ct2": 18,
+                        "ct3": 14,
+                        "ct4": 17,
+                        "assignment1": 15,
+                        "assignment2": 13,
+                        "attendanceMark": 10,
+                        "partA": 80,
+                        "partB": 85
+                    }
+                ],
+                "totalMark": 85,
+                "level": 3,
+                "Term": 1
+            },
+            {
+                "subjectName": "Operating Systems",
+                "courseCode": "CSE3104",
+                "detailsMark": [
+                    {
+                        "ct1": 17,
+                        "ct2": 18,
+                        "ct3": 14,
+                        "ct4": 17,
+                        "assignment1": 15,
+                        "assignment2": 13,
+                        "attendanceMark": 10,
+                        "partA": 80,
+                        "partB": 85
+                    }
+                ],
+                "totalMark": 92,
+                "level": 3,
+                "Term": 1
+            },
+            {
+                "subjectName": "Software Development",
+                "courseCode": "CSE3105",
+                "detailsMark": [
+                    {
+                        "ct1": 17,
+                        "ct2": 18,
+                        "ct3": 14,
+                        "ct4": 17,
+                        "assignment1": 15,
+                        "assignment2": 13,
+                        "attendanceMark": 10,
+                        "partA": 80,
+                        "partB": 85
+                    }
+                ],
+                "totalMark": 91,
+                "level": 3,
+                "Term": 1
+            }
+        ]
+    },
+    {
+        "studentName": "Alice Brown",
+        "studentID": "220101043",
+        "department": "CSE",
+        "batch": 14,
+        "email": "alice.brown@example.com",
+        "results": [
+            {
+                "subjectName": "Advanced Computer Networks",
+                "courseCode": "CSE1101",
+                "credit": 3,
+                "detailsMark": [
+                    {
+                        "ct1": 15,
+                        "ct2": 16,
+                        "ct3": 12,
+                        "ct4": 18,
+                        "assignment1": 14,
+                        "assignment2": 12,
+                        "attendanceMark": 11,
+                        "partA": 75,
+                        "partB": 80
+                    }
+                ],
+                "totalMark": 85,
+                "level": 1,
+                "Term": 1
+            },
+            {
+                "subjectName": "Advanced Algorithm Design",
+                "courseCode": "CSE1102",
+                "detailsMark": [
+                    {
+                        "ct1": 15,
+                        "ct2": 16,
+                        "ct3": 12,
+                        "ct4": 18,
+                        "assignment1": 14,
+                        "assignment2": 12,
+                        "attendanceMark": 11,
+                        "partA": 75,
+                        "partB": 80
+                    }
+                ],
+                "totalMark": 78,
+                "level": 1,
+                "Term": 1
+            },
+            {
+                "subjectName": "Advanced Database Systems",
+                "courseCode": "CSE1103",
+                "detailsMark": [
+                    {
+                        "ct1": 15,
+                        "ct2": 16,
+                        "ct3": 12,
+                        "ct4": 18,
+                        "assignment1": 14,
+                        "assignment2": 12,
+                        "attendanceMark": 11,
+                        "partA": 75,
+                        "partB": 80
+                    }
+                ],
+                "totalMark": 90,
+                "level": 1,
+                "Term": 1
+            },
+            {
+                "subjectName": "Advanced Operating Systems",
+                "courseCode": "CSE1104",
+                "detailsMark": [
+                    {
+                        "ct1": 15,
+                        "ct2": 16,
+                        "ct3": 12,
+                        "ct4": 18,
+                        "assignment1": 14,
+                        "assignment2": 12,
+                        "attendanceMark": 11,
+                        "partA": 75,
+                        "partB": 80
+                    }
+                ],
+                "totalMark": 92,
+                "level": 1,
+                "Term": 1
+            },
+            {
+                "subjectName": "Advanced Software Development",
+                "courseCode": "CSE1105",
+                "detailsMark": [
+                    {
+                        "ct1": 15,
+                        "ct2": 16,
+                        "ct3": 12,
+                        "ct4": 18,
+                        "assignment1": 14,
+                        "assignment2": 12,
+                        "attendanceMark": 11,
+                        "partA": 75,
+                        "partB": 80
+                    }
+                ],
+                "totalMark": 88,
+                "level": 1,
+                "Term": 1
+            }
+        ]
+    },
+    {
+        "studentName": "Bob Green",
+        "studentID": "220101044",
+        "department": "CSE",
+        "batch": 14,
+        "email": "bob.green@example.com",
+        "results": [
+            {
+                "subjectName": "Advanced Computer Networks",
+                "courseCode": "CSE1101",
+                "credit": 3,
+                "detailsMark": [
+                    {
+                        "ct1": 16,
+                        "ct2": 18,
+                        "ct3": 14,
+                        "ct4": 17,
+                        "assignment1": 15,
+                        "assignment2": 13,
+                        "attendanceMark": 10,
+                        "partA": 80,
+                        "partB": 85
+                    }
+                ],
+                "totalMark": 88,
+                "level": 4,
+                "Term": 1
+            },
+            {
+                "subjectName": "Advanced Algorithm Design",
+                "courseCode": "CSE1102",
+                "detailsMark": [
+                    {
+                        "ct1": 17,
+                        "ct2": 18,
+                        "ct3": 13,
+                        "ct4": 17,
+                        "assignment1": 15,
+                        "assignment2": 13,
+                        "attendanceMark": 10,
+                        "partA": 80,
+                        "partB": 85
+                    }
+                ],
+                "totalMark": 90,
+                "level": 4,
+                "Term": 1
+            },
+            {
+                "subjectName": "Advanced Database Systems",
+                "courseCode": "CSE1103",
+                "detailsMark": [
+                    {
+                        "ct1": 16,
+                        "ct2": 18,
+                        "ct3": 14,
+                        "ct4": 17,
+                        "assignment1": 15,
+                        "assignment2": 13,
+                        "attendanceMark": 10,
+                        "partA": 80,
+                        "partB": 85
+                    }
+                ],
+                "totalMark": 85,
+                "level": 4,
+                "Term": 1
+            },
+            {
+                "subjectName": "Advanced Operating Systems",
+                "courseCode": "CSE1104",
+                "detailsMark": [
+                    {
+                        "ct1": 17,
+                        "ct2": 18,
+                        "ct3": 14,
+                        "ct4": 17,
+                        "assignment1": 15,
+                        "assignment2": 13,
+                        "attendanceMark": 10,
+                        "partA": 80,
+                        "partB": 85
+                    }
+                ],
+                "totalMark": 92,
+                "level": 4,
+                "Term": 1
+            },
+            {
+                "subjectName": "Advanced Software Development",
+                "courseCode": "CSE1105",
+                "detailsMark": [
+                    {
+                        "ct1": 17,
+                        "ct2": 18,
+                        "ct3": 14,
+                        "ct4": 17,
+                        "assignment1": 15,
+                        "assignment2": 13,
+                        "attendanceMark": 10,
+                        "partA": 80,
+                        "partB": 85
+                    }
+                ],
+                "totalMark": 91,
+                "level": 4,
+                "Term": 1
+            }
+        ]
+    }
+]
