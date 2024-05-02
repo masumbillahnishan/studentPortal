@@ -13,10 +13,10 @@ const AuthProvider = ({ children }) => {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(true);
     
-    const signIn = (email, password, name) => {
+    const signIn = (email, password, userType) => {
         return createUserWithEmailAndPassword(auth, email, password)
             .then(userCredential => {
-                return updateUserData(userCredential.user, name);
+                return updateUserData(userCredential.user, userType);
             });
     };
     

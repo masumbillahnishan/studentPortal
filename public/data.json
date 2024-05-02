@@ -7,8 +7,8 @@
         "email": "john.doe@example.com",
         "results": [
             {
-                "subjectName": "Computer Architecture",
-                "courseCode": "CSE2101",
+                "course": "Computer Architecture",
+                "coursecode": "CSE2101",
                 "credit": 3,
                 "status": "current",
                 "detailsMark": [
@@ -24,13 +24,11 @@
                         "partB": 80
                     }
                 ],
-                "totalMark": 85,
-                "level": 2,
-                "Term": 1
+                "totalMark": 85
             },
             {
-                "subjectName": "Data Structures and Algorithms",
-                "courseCode": "CSE2102",
+                "course": "Data Structures and Algorithms",
+                "coursecode": "CSE2102",
                 "detailsMark": [
                     {
                         "ct1": 15,
@@ -44,13 +42,11 @@
                         "partB": 80
                     }
                 ],
-                "totalMark": 78,
-                "level": 2,
-                "Term": 1
+                "totalMark": 78
             },
             {
-                "subjectName": "Database Management Systems",
-                "courseCode": "CSE2103",
+                "course": "Database Management Systems",
+                "coursecode": "CSE2103",
                 "detailsMark": [
                     {
                         "ct1": 15,
@@ -64,13 +60,11 @@
                         "partB": 80
                     }
                 ],
-                "totalMark": 90,
-                "level": 2,
-                "Term": 1
+                "totalMark": 90
             },
             {
-                "subjectName": "Operating Systems",
-                "courseCode": "CSE3104",
+                "course": "Operating Systems",
+                "coursecode": "CSE3104",
                 "detailsMark": [
                     {
                         "ct1": 15,
@@ -84,13 +78,11 @@
                         "partB": 80
                     }
                 ],
-                "totalMark": 92,
-                "level": 2,
-                "Term": 1
+                "totalMark": 92
             },
             {
-                "subjectName": "Software Engineering",
-                "courseCode": "CSE2105",
+                "course": "Software Engineering",
+                "coursecode": "CSE2105",
                 "detailsMark": [
                     {
                         "ct1": 15,
@@ -104,9 +96,7 @@
                         "partB": 80
                     }
                 ],
-                "totalMark": 88,
-                "level": 2,
-                "Term": 1
+                "totalMark": 88
             }
         ]
     },
@@ -118,8 +108,8 @@
         "email": "jane.smith@example.com",
         "results": [
             {
-                "subjectName": "Computer Architecture",
-                "courseCode": "CSE2101",
+                "course": "Computer Architecture",
+                "coursecode": "CSE2101",
                 "credit": 3,
                 "detailsMark": [
                     {
@@ -134,13 +124,11 @@
                         "partB": 85
                     }
                 ],
-                "totalMark": 88,
-                "level": 2,
-                "Term": 1
+                "totalMark": 88
             },
             {
-                "subjectName": "Data Structures and Algorithms",
-                "courseCode": "CSE2102",
+                "course": "Data Structures and Algorithms",
+                "coursecode": "CSE2102",
                 "detailsMark": [
                     {
                         "ct1": 17,
@@ -154,13 +142,11 @@
                         "partB": 85
                     }
                 ],
-                "totalMark": 90,
-                "level": 2,
-                "Term": 1
+                "totalMark": 90
             },
             {
-                "subjectName": "Database Management Systems",
-                "courseCode": "CSE2103",
+                "course": "Database Management Systems",
+                "coursecode": "CSE2103",
                 "detailsMark": [
                     {
                         "ct1": 16,
@@ -174,13 +160,11 @@
                         "partB": 85
                     }
                 ],
-                "totalMark": 85,
-                "level": 2,
-                "Term": 1
+                "totalMark": 85
             },
             {
-                "subjectName": "Operating Systems",
-                "courseCode": "CSE3104",
+                "course": "Operating Systems",
+                "coursecode": "CSE3104",
                 "detailsMark": [
                     {
                         "ct1": 17,
@@ -194,13 +178,11 @@
                         "partB": 85
                     }
                 ],
-                "totalMark": 92,
-                "level": 2,
-                "Term": 1
+                "totalMark": 92
             },
             {
-                "subjectName": "Software Engineering",
-                "courseCode": "CSE2105",
+                "course": "Software Engineering",
+                "coursecode": "CSE2105",
                 "detailsMark": [
                     {
                         "ct1": 17,
@@ -214,9 +196,7 @@
                         "partB": 85
                     }
                 ],
-                "totalMark": 91,
-                "level": 2,
-                "Term": 1
+                "totalMark": 91
             }
         ]
     },
@@ -228,8 +208,8 @@
         "email": "jon@example.com",
         "results": [
             {
-                "subjectName": "Computer Networks",
-                "courseCode": "CSE3101",
+                "course": "Computer Networks",
+                "coursecode": "CSE3101",
                 "credit": 3,
                 "detailsMark": [
                     {
@@ -249,8 +229,8 @@
                 "Term": 1
             },
             {
-                "subjectName": "Algorithm Design",
-                "courseCode": "CSE3102",
+                "course": "Algorithm Design",
+                "coursecode": "CSE3102",
                 "detailsMark": [
                     {
                         "ct1": 15,
@@ -269,8 +249,8 @@
                 "Term": 1
             },
             {
-                "subjectName": "Database Systems",
-                "courseCode": "CSE3103",
+                "course": "Database Systems",
+                "coursecode": "CSE3103",
                 "detailsMark": [
                     {
                         "ct1": 15,
@@ -289,8 +269,8 @@
                 "Term": 1
             },
             {
-                "subjectName": "Operating Systems",
-                "courseCode": "CSE3104",
+                "course": "Operating Systems",
+                "coursecode": "CSE3104",
                 "detailsMark": [
                     {
                         "ct1": 15,
@@ -309,8 +289,8 @@
                 "Term": 1
             },
             {
-                "subjectName": "Software Development",
-                "courseCode": "CSE3105",
+                "course": "Software Development",
+                "coursecode": "CSE3105",
                 "detailsMark": [
                     {
                         "ct1": 15,
@@ -338,8 +318,8 @@
         "email": "smith@example.com",
         "results": [
             {
-                "subjectName": "Computer Networks",
-                "courseCode": "CSE3101",
+                "course": "Computer Networks",
+                "coursecode": "CSE3101",
                 "credit": 3,
                 "detailsMark": [
                     {
@@ -359,8 +339,8 @@
                 "Term": 1
             },
             {
-                "subjectName": "Algorithm Design",
-                "courseCode": "CSE3102",
+                "course": "Algorithm Design",
+                "coursecode": "CSE3102",
                 "detailsMark": [
                     {
                         "ct1": 17,
@@ -379,8 +359,8 @@
                 "Term": 1
             },
             {
-                "subjectName": "Database Systems",
-                "courseCode": "CSE3103",
+                "course": "Database Systems",
+                "coursecode": "CSE3103",
                 "detailsMark": [
                     {
                         "ct1": 16,
@@ -399,8 +379,8 @@
                 "Term": 1
             },
             {
-                "subjectName": "Operating Systems",
-                "courseCode": "CSE3104",
+                "course": "Operating Systems",
+                "coursecode": "CSE3104",
                 "detailsMark": [
                     {
                         "ct1": 17,
@@ -419,8 +399,8 @@
                 "Term": 1
             },
             {
-                "subjectName": "Software Development",
-                "courseCode": "CSE3105",
+                "course": "Software Development",
+                "coursecode": "CSE3105",
                 "detailsMark": [
                     {
                         "ct1": 17,
@@ -448,8 +428,8 @@
         "email": "alice.brown@example.com",
         "results": [
             {
-                "subjectName": "Advanced Computer Networks",
-                "courseCode": "CSE1101",
+                "course": "Advanced Computer Networks",
+                "coursecode": "CSE1101",
                 "credit": 3,
                 "detailsMark": [
                     {
@@ -469,8 +449,8 @@
                 "Term": 1
             },
             {
-                "subjectName": "Advanced Algorithm Design",
-                "courseCode": "CSE1102",
+                "course": "Advanced Algorithm Design",
+                "coursecode": "CSE1102",
                 "detailsMark": [
                     {
                         "ct1": 15,
@@ -489,8 +469,8 @@
                 "Term": 1
             },
             {
-                "subjectName": "Advanced Database Systems",
-                "courseCode": "CSE1103",
+                "course": "Advanced Database Systems",
+                "coursecode": "CSE1103",
                 "detailsMark": [
                     {
                         "ct1": 15,
@@ -509,8 +489,8 @@
                 "Term": 1
             },
             {
-                "subjectName": "Advanced Operating Systems",
-                "courseCode": "CSE1104",
+                "course": "Advanced Operating Systems",
+                "coursecode": "CSE1104",
                 "detailsMark": [
                     {
                         "ct1": 15,
@@ -529,8 +509,8 @@
                 "Term": 1
             },
             {
-                "subjectName": "Advanced Software Development",
-                "courseCode": "CSE1105",
+                "course": "Advanced Software Development",
+                "coursecode": "CSE1105",
                 "detailsMark": [
                     {
                         "ct1": 15,
@@ -558,8 +538,8 @@
         "email": "bob.green@example.com",
         "results": [
             {
-                "subjectName": "Advanced Computer Networks",
-                "courseCode": "CSE1101",
+                "course": "Advanced Computer Networks",
+                "coursecode": "CSE1101",
                 "credit": 3,
                 "detailsMark": [
                     {
@@ -579,8 +559,8 @@
                 "Term": 1
             },
             {
-                "subjectName": "Advanced Algorithm Design",
-                "courseCode": "CSE1102",
+                "course": "Advanced Algorithm Design",
+                "coursecode": "CSE1102",
                 "detailsMark": [
                     {
                         "ct1": 17,
@@ -599,8 +579,8 @@
                 "Term": 1
             },
             {
-                "subjectName": "Advanced Database Systems",
-                "courseCode": "CSE1103",
+                "course": "Advanced Database Systems",
+                "coursecode": "CSE1103",
                 "detailsMark": [
                     {
                         "ct1": 16,
@@ -619,8 +599,8 @@
                 "Term": 1
             },
             {
-                "subjectName": "Advanced Operating Systems",
-                "courseCode": "CSE1104",
+                "course": "Advanced Operating Systems",
+                "coursecode": "CSE1104",
                 "detailsMark": [
                     {
                         "ct1": 17,
@@ -639,8 +619,8 @@
                 "Term": 1
             },
             {
-                "subjectName": "Advanced Software Development",
-                "courseCode": "CSE1105",
+                "course": "Advanced Software Development",
+                "coursecode": "CSE1105",
                 "detailsMark": [
                     {
                         "ct1": 17,

@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import Marquee from 'react-fast-marquee';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../provider/AuthProvider';
+import Register from './Register';
 
 const Header = () => {
 
@@ -34,12 +35,21 @@ const Header = () => {
                 <div className="flex items-center space-x-4">
 
 
-                    {
-                        user ? <><span>{user.displayName}</span> <button onClick={handleLogOut} className="btn btn-xs ms-4">singOut</button> </> : <Link className='text-lg hover:text-gray-300 transition duration-300 ease-in-out' to="/login">LogIN</Link>
-                    }
+                    
 
                     {
-                      user &&  userName == 'teacher' ? <><Link className='text-lg hover:text-gray-300 transition duration-300 ease-in-out' to="/register">Register</Link></> : <></>
+                      user &&  userName == 'teacher' ? <><Link className='text-lg hover:text-gray-300 transition duration-300 ease-in-out' to="/register">Register</Link></> :<Link to='/register'></Link>
+                    }
+                   
+                    {
+                      user &&  userName == 'teacher' ? <><Link className='text-lg hover:text-gray-300 transition duration-300 ease-in-out' to="/courseregister">Course Register</Link></> :<Link to='/register'></Link>
+                    }
+                    {
+                      user &&  userName == 'teacher' ? <><Link className=' text-lg hover:text-gray-300 transition duration-300 ease-in-out' to="/teacherregister">Teacher Register</Link></> :<Link to='/register'></Link>
+                    }
+
+{
+                        user ? <><span>{user.displayName}</span> <button onClick={handleLogOut} className="btn btn-xs ms-4">Sign Out</button> </> : <Link className='text-lg hover:text-gray-300 transition duration-300 ease-in-out' to="/login">LogIN</Link>
                     }
 
 

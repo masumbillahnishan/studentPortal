@@ -1,19 +1,29 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../provider/AuthProvider';
 import Home from './Home';
+import Swal from 'sweetalert2'
 
 const Register = () => {
-    const { signIn,userName } = useContext(AuthContext);
+    const { signIn, userName } = useContext(AuthContext);
+    const [error, setError] = useState(null);
 
     const handleRegister = event => {
         event.preventDefault();
         const form = event.target;
         const email = form.email.value;
-        const name = form.name.value; 
+        const userType = form.userType.value;
         const password = form.password.value;
-        console.log(name, email, password);
-        signIn(email, password, name) 
+        const studentID = form.studentID.value;
+        const department = form.department.value;
+        const batch = parseInt(form.batch.value);
+        const studentName = form.studentName.value;
+        const result=[];
+
+
+        const student = { studentID, studentName, email, department, batch,result }
+
+        signIn(email, password, userType)
             .then(result => {
                 const loggedUser = result.user;
                 console.log(loggedUser);
@@ -22,43 +32,109 @@ const Register = () => {
             .catch(error => {
                 console.log(error.message);
             });
+
+        fetch('http://localhost:5000/students', {
+            method: "POST",
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(student)
+        })
+        .then(res => {
+            if (!res.ok) {
+                throw new Error('Email already registered');
+            }
+            return res.json();
+        })
+        .then(data => {
+            console.log(data);
+            Swal.fire({
+                position: "top-end",
+                icon: "success",
+                title: "Your work has been saved",
+                showConfirmButton: false,
+                timer: 1500
+              });
+              
+            form.reset();
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            setError(error.message);
+            Swal.fire({
+                position: "top-end",
+                icon: "error",
+                title: "Email Already exist",
+                showConfirmButton: false,
+                timer: 1500
+              });
+        });
     };
 
     return (
-        <div>
+        <div className="bg-gray-100 min-h-screen flex items-center justify-center">
             {
-                userName=='teacher'?<span><div className="hero min-h-screen bg-base-200" style={{backgroundImage: "url('/public/Image/9307751.png')"}}>
-                <div className="hero-content flex-col ">
-                    <div className="text-center lg:text-left">
-                        <h1 className="text-5xl font-bold">Please Register!</h1>
+                userName === 'teacher' ? (
+                    <div className="w-full max-w-md">
+                        <div className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+                            <h1 className="text-2xl mb-4 text-center font-bold">Please Register!</h1>
+                            {error && <p className="text-red-500 text-xs italic mb-4">{error}</p>}
+                            <form onSubmit={handleRegister}>
+                                <div className="mb-4">
+                                    <label className="block text-gray-700 text-sm font-bold mb-2">
+                                        User Type
+                                    </label>
+                                    <select name="userType" className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                                        <option value="student">Student</option>
+                                       
+                                    </select>
+                                </div>
+                                <div className="mb-4">
+                                    <label className="block text-gray-700 text-sm font-bold mb-2">
+                                        Email
+                                    </label>
+                                    <input type="email" name='email' required placeholder="Email" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
+                                </div>
+                                <div className="mb-4">
+                                    <label className="block text-gray-700 text-sm font-bold mb-2">
+                                        Password
+                                    </label>
+                                    <input type="password" required name='password' placeholder="Password" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
+                                </div>
+                                {/* New fields for student data */}
+                                <div className="mb-4">
+                                    <label className="block text-gray-700 text-sm font-bold mb-2">
+                                        Student ID
+                                    </label>
+                                    <input type="text" name='studentID' placeholder="Student ID" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required />
+                                </div>
+                                <div className="mb-4">
+                                    <label className="block text-gray-700 text-sm font-bold mb-2">
+                                        Student Name
+                                    </label>
+                                    <input type="text" name='studentName' placeholder="Student Name" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required />
+                                </div>
+                                <div className="mb-4">
+                                    <label className="block text-gray-700 text-sm font-bold mb-2">
+                                        Department
+                                    </label>
+                                    <input type="text" name='department' placeholder="Department" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required />
+                                </div>
+                                <div className="mb-6">
+                                    <label className="block text-gray-700 text-sm font-bold mb-2">
+                                        Batch
+                                    </label>
+                                    <input type="number" name='batch' placeholder="Batch" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required />
+                                </div>
+                                <div className="flex items-center justify-center">
+                                    <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+                                        Register
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
-                    <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-                        <form onSubmit={handleRegister} className="card-body">
-                            <div className="form-control">
-                                <label className="label">
-                                    <span className="label-text">User</span>
-                                </label>
-                                <input type="text" name='name' required placeholder="Student / Teacher " className="input input-bordered" required />
-                            </div>
-                            <div className="form-control">
-                                <label className="label">
-                                    <span className="label-text">Email</span>
-                                </label>
-                                <input type="email" name='email' required placeholder="email" className="input input-bordered" required />
-                            </div>
-                            <div className="form-control">
-                                <label className="label">
-                                    <span className="label-text">Password</span>
-                                </label>
-                                <input type="password" required name='password' placeholder="password" className="input input-bordered" required />
-                            </div>
-                            <div className="form-control mt-6">
-                                <button className="btn btn-primary">Register</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div></span>:<Home></Home>
+                ) : <Home />
             }
         </div>
     );

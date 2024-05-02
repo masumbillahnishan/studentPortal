@@ -25,13 +25,15 @@ const Main = () => {
             <Header />
             <div className='flex'>
                 {user && userName === 'teacher' && (
-                    <div className='bg-gray-800 h-screen flex w-48'>
-                        <TeacherSideBar />
+                    <div className='bg-gray-800 h-screen relative flex w-48'>
+                        <TeacherSideBar  />
                     </div>
                 )}
                 {user && userName === 'student' && <StudentSidebar />}
+
+
                 <div className='flex-1'>
-                    <Outlet />
+                    <Outlet ></Outlet>
                 </div>
             </div>
         </div>

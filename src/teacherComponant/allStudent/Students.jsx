@@ -1,34 +1,30 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import { Link, useLoaderData } from 'react-router-dom';
-import Student from './Student';
 import { AuthContext } from '../../provider/AuthProvider';
-import Login from '../../componant/Login';
 
 
 const Students = () => {
     const students = useLoaderData();
-    const { user, userName } = useContext(AuthContext)
+    const { user } = useContext(AuthContext);
+
     return (
-        <div>
-            {
-                user ? <>
-                    <h1 className='bg-emerald-100'>All Student Details</h1>
-                    <div className='mx-3 grid grid-cols-6 p-2'>
-                        <h2>ID</h2>
-                        <h2>Name</h2>
-                        <h2>Department</h2>
-                        <h2>Level</h2>
-                        <h2>Term</h2>
-                        <h2>Details</h2>
+        <div className="container mx-auto py-8">
+            {user ? (
+                <>
+                    <h1 className="text-3xl font-semibold mb-6 text-center text-gray-800">All Student Details</h1>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                        {students.map(student => (
+                            <div key={student.studentID} className="bg-white rounded-lg shadow-md p-6">
+                                <p className="text-xl font-semibold text-gray-800 mb-2">{student.studentName}</p>
+                                <p className="text-gray-600 mb-2">{student.email}</p>
+                                <p className="text-gray-600">Batch: {student.batch}</p>
+                            </div>
+                        ))}
                     </div>
-                    {
-                        students.map(student => <Student
-                            key={student.studentID}
-                            student={student}
-                        />)
-                    }
-                </> : <Login></Login>
-            }
+                </>
+            ) : (
+                <Login />
+            )}
         </div>
     );
 };

@@ -43,14 +43,14 @@ const TeacherSideBar = () => {
                             Course
                         </Link>
                         <Link
-                            to='/batch'
+                            to='/batct'
                             className='block py-2 px-4 text-white hover:bg-gray-700 transition duration-200'>
                             Batch
                         </Link>
                         <Link
-                            to='/contact'
+                            to='/courseassigntostudent'
                             className='block py-2 px-4 text-white hover:bg-gray-700 transition duration-200'>
-                            Contact
+                            Course Assign 
                         </Link>
                         <Link
                             to='/about'
